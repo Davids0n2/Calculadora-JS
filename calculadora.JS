@@ -27,6 +27,6 @@ function calcular() {
 function retardo() {
     const display = document.querySelector('#display');
     if (display.value.trim() === '00243') {
-        window.alert("Código secreto ativado!");
-    }
-}
+        window.alert("VAI TOMAR NO CU!");
+        Clear()}
+} 

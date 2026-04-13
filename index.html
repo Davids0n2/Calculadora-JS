@@ -12,24 +12,24 @@
     <div class="Calculadora">
         <input type="text" disabled id="display" >
         <div class="box-buttons">
-            <button>C</button>
-            <button>&lt;</button>
-            <button>/</button>
-            <button>*</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>=</button>
-            <button>0</button>
-            <button>.</button>
+            <button onclick="Clear('C')">C</button>
+            <button onclick="voltar()">&lt;</button>
+            <button onclick="Play('/')">/</button>
+            <button onclick="Play('*')">*</button>
+            <button onclick="Play('7')">7</button>
+            <button onclick="Play('8')">8</button>
+            <button onclick="Play('9')">9</button>
+            <button onclick="Play('-')">-</button>
+            <button onclick="Play('4')">4</button>
+            <button onclick="Play('5')">5</button>
+            <button onclick="Play('6')">6</button>
+            <button onclick="Play('+')">+</button>
+            <button onclick="Play('1')">1</button>
+            <button onclick="Play('2')">2</button>
+            <button onclick="Play('3')">3</button>
+            <button class="btn1" onclick="calcular()">=</button>
+            <button class="btn0" onclick="Play('0')">0</button>
+            <button onclick="Play('.')">.</button>
         </div>
     </div>
 </body>
