@@ -14,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 h1{
@@ -25,47 +26,69 @@ h1{
 
 
 .Calculadora{
-    width: clamp(250px, 75vw, 420px);
-    margin: 0 auto;
-    background: #222;
-    border-radius: 14px;
-    padding: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-input{
+#display{
     width: 100%;
-    min-height: 2.5rem;
-    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    height: 30px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
     text-align: right;
-    padding: 8px;
-    border-radius: 8px;
     border: none;
-    background: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 
-@media (max-width: 420px) {
-    .box-buttons td {
-        height: 9vw;
+
+.box-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+button{
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+button:hover{
+    background-color: #adadad;
+}
+
+.btn1{
+    grid-row:  4 /  6 ;
+    grid-column:  4;
+    height: 100%;
+}
+
+.btn0{
+    grid-column: 1 / 3;
+}
+
+@media (max-width: 600px) {
+    .Calculadora {
+        width: 250px;
+        padding: 15px;
+    }
+
+    #display {
+        font-size: 16px;
+        height: 25px;
+    }
+
+    button {
+        font-size: 18px;
+        height: 35px;
     }
 }
 
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.box-buttons td{
-    height: 60px;
-}
-
-.box-buttons button{
-    width: 100%;
-    font-size: 20px;
-    height: 100%;
-}
